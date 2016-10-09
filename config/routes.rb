@@ -3,6 +3,13 @@ Rails.application.routes.draw do
   resources :outline
   resources :testimonial
   resources :contact
+
+  namespace :introduction do
+    resources :sections
+    resources :section1
+    resources :section2
+    resources :section3
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
