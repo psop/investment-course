@@ -86,6 +86,25 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :chapter4 do
+    namespace :section1 do
+      resources :part1
+      resources :part2
+      resources :part3
+      resources :part4
+      resources :part5
+      resources :part6
+      resources :part7
+      resources :part8
+    end
+    namespace :section2 do
+      resources :part1
+      resources :part2
+      resources :part3
+      resources :part4
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
