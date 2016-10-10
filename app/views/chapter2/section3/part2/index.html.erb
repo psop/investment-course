@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<title>嘉鼎資本｜投資事業管理術資本估值與資本力資本估值</title>
+	<meta charset="utf-8" />
+  <meta name="description" content="嘉鼎資本投資事業管理術資本估值與資本力資本估值篇，幫助投資人學會計算資本回報率（ROC）及資本力。">
+  <meta name="keywords" content="嘉鼎資本, 投資事業管理術, 投資, 資本估值, 資本力, 資本回報率, ROC">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body class="no-sidebar">
+	<div id="page-wrapper">
+	  <!-- Main -->
+		<article id="main">
+		  <header class="special container">
+			<span class="icon fa-book"></span>
+			  <h1>2-3-2 資本估值與資本力——資本估值篇</h1>
+			  <p>目標：學會計算資本回報率（ROC）及資本力</p>
+		  </header>
+	  <!-- One -->
+		<section class="wrapper style4 container">
+	  <!-- Content -->
+		<div class="content">
+		  <section>
+			<p>本小節較多計算的部分，但只要一步一步跟著做，應該很容易可以舉一反三！</p>
+			<span style="color:black;font-weight:default">■Step 1. 投入資本</span></br>
+			<p>要計算資本成長率，第一步就是先計算一家公司的投入資本有多少，引述<%= link_to "Ch.2-1-3 投入資本篇", chapter2_section1_part3_index_path %>的公式：</br>
+			<mark>投入資本＝總資產－流動負債</marK></p>
+			<span style="color:black;font-weight:default">■Step 2. 營業淨利（營業利益）</span></br>
+			<p>引述<%= link_to "Ch.1-3-2 損益表篇", chapter1_section3_part2_index_path %> Step 2，計算出該公司的營業淨利（營業利益）</p>
+			<span style="color:black;font-weight:default">■Step 3. 編製入表</span></br>
+			<p>前兩步驟在之前章節已有介紹，投資人應該都能夠從公司的年報中找到相關資訊，接著就是從2006～2015年逐年收集，這對初階投資人可能會稍嫌複雜，如果真的無法找到相關資訊，可直接參考案例或是與<%= link_to "嘉鼎資本聯繫", contact_index_path %>，我們會很樂意協助。</p>
+			<p>下表為台灣大哥大過去10年的營業淨利（營業利益）與投入資本：</br>
+			<div class="table-responsive">
+        <table class="table">
+				  <tr>
+            <td>財務年度</td>
+            <td>營業淨利</td>
+            <td>投入資本</td>
+          </tr>
+				  <tr>
+            <td>2006</td>
+            <td>19,323.84</td>
+            <td>100,432.24</td>
+          </tr>
+          <tr>
+            <td>2007</td>
+            <td>21,300.20</td>
+            <td>40,376.32</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>21,761.84</td>
+            <td>65,203.96</td>
+          </tr>
+          <tr>
+            <td>2009</td>
+            <td>20,448.13</td>
+            <td>61,138.71</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>18,307.71</td>
+            <td>62,252.55</td>
+          </tr>
+          <tr>
+            <td>2011</td>
+            <td>17,589.81</td>
+            <td>55,688.41</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>20,782.21</td>
+            <td>70,459.83</td>
+          </tr>
+          <tr>
+            <td>2013</td>
+            <td>21,071.84</td>
+            <td>79,746.74</td>
+          </tr>
+          <tr>
+            <td>2014</td>
+            <td>19,711.81</td>
+            <td>100,070.77</td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>18,769.15</td>
+            <td>96,853.46</td>
+          </tr>
+        </table>
+      </div>
+      <p>（單位：百萬元）</p>
+      <span style="color:black;font-weight:default">■Step 4. 計算資本回報率（Return On Capital, ROC）</span></br>
+      <p>資本回報率（ROC）的簡易公式：</br>
+      <mark>資本回報率（ROC）＝當期營業淨利（營業利益）/期初投入資本</mark></p>
+      <p>以台灣大哥大來說，財務年度2010年的資本回報率（ROC）＝18,307.71/61,138.71＝29.94%</p>
+      <p>投資人可能會有疑問，為什麼要用財務年度2009年的投入資本呢？原因是投入資本是以該年期末資料計算，所以2009年度的資料就是2010年的期初資料。而使用期初的原因在於，等等我們在估算未來（如2015年末要估算2016年）資本回報率（ROC）的時候，我們也只有該年度的期初資料，因此都用期初資料可以維持計算的一致性。</p>
+      <p>下表為各年度計算結果：</br>
+      <div class="table-responsive">
+        <table class="table">
+				  <tr>
+            <td>財務年度</td>
+            <td>資本回報率（ROC）</td>
+          </tr>
+          <tr>
+            <td>2007</td>
+            <td>21.21%</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>53.90%</td>
+          </tr>
+          <tr>
+            <td>2009</td>
+            <td>31.36%</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>29.94%</td>
+          </tr>
+          <tr>
+            <td>2011</td>
+            <td>28.26%</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>37.32%</td>
+          </tr>
+          <tr>
+            <td>2013</td>
+            <td>29.91%</td>
+          </tr>
+          <tr>
+            <td>2014</td>
+            <td>24.72%</td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>18.76%</td>
+          </tr>
+        </table>
+      </div>
+      ■Step 5. 營業淨利（營業利益）估值</span></br>
+      <p>預估營業淨利（營業利益）的簡易公式：</br>
+      <mark>預估營業淨利（營業利益）＝當期投入資本（每股）x過去五年平均資本回報率（ROC）</mark></p>
+      <p>簡易的預估方法就是平均法，也就是往前取五年的平均資本回報率（ROC）做為預估資本回報率（ROC），也就是2012年時取2007～2011年的平均值，也就是（33.82+44.22+31.11+29.94+28.26）/5＝33.27%</p>
+      <p>計算結果如下表：</br>
+      <div class="table-responsive">
+        <table class="table">
+				  <tr>
+            <td>財務年度</td>
+            <td>過去五年平均資本回報率（ROC）</td>
+            <td>當期投入資本（每股）</td>
+            <td>預估營業淨利（每股）</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>28.72%</td>
+            <td>22.73</td>
+            <td>6.53</td>
+          </tr>
+          <tr>
+            <td>2011</td>
+            <td>31.03%</td>
+            <td>23.14</td>
+            <td>7.18</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>33.93%</td>
+            <td>20.70</td>
+            <td>6.82</td>
+          </tr>
+          <tr>
+            <td>2013</td>
+            <td>36.16%</td>
+            <td>26.19</td>
+            <td>9.47</td>
+          </tr>
+          <tr>
+            <td>2014</td>
+            <td>31.36%</td>
+            <td>29.64</td>
+            <td>9.30</td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>30.03%</td>
+            <td>36.76</td>
+            <td>11.04</td>
+          </tr>
+        </table>
+      </div>
+      <p><pre>小提醒：由於資料範圍為2006～2015年，因此2010年度的資本回報率（ROC）預估採用06、07、08、09四年平均值而非五年。</pre></p>
+      <p>有投資人會問為什麼是採用五年的資料，嘉鼎資本分析過一年、三年、五年對於未來的預估，五年的統計代表意義較高，但是真的無法取得如此多資料的投資人，也是可以用三年或甚至過去一年的資本回報率（ROC）作為來年預估，雖然準確性會較差，但是仍在可用範圍內。</p>
+      <span style="color:black;font-weight:default">■Step 6. 資本力</span></br>
+      <p>計算營業淨利（營業利益）的目的並非只是單純的預測，而是利用這個預估值來估算目前的投入可預期的資本成長率，簡易計算的公式：</br>
+      <mark>預期資本成長率＝當期預估營業淨利（營業利益）/股價</mark></p>
+      <p>而嘉鼎資本則用<strong>資本力</strong>來說明預期資本成長率，以財務年度2010年為例，當年的預估營業淨利（營業利益）$6.53，假設當時股價為$60，資本力＝6.53/60＝10.88%。</p>
+      <p>也就是說在2010年時，以60元取得的股權可以帶來10.88%的預期資本成長率。</p>
+		  </section>
+		</div>
+		</section>
+	  <!-- Two -->
+		<section class="wrapper style1 container special">
+		  <div class="row">
+			<div class="4u 12u(narrower)">
+			  <section>
+				<header>
+				  <h3>《資本力：啟動財富永續成長的關鍵力量》</h3>
+				</header>
+				財富的全貌，除了資金、資產，還有資本的存在！華倫．巴菲特和波克夏集團、精品集團LVMH、諾貝爾基金會，都是「資本力」的長期實踐者！</p>
+				<footer>
+				  <ul class="buttons">
+					<li><a href="http://magnific.biz/?p=2829" target="_blank" class="button small">點我看更多</a></li>
+				  </ul>
+				</footer>
+			  </section>
+			</div>
+			<div class="4u 12u(narrower)">
+			  <section>
+				<header>
+				  <h3>你能區分資本與資產的不同嗎？</h3>
+				</header>
+				我們可以很容易得知富豪們在富比士排行榜的身價，目前都是以金錢數量來衡量，可別以為說他們擁有的只是現金資產。如果背後沒有「資本」、「事業」來支持，其身價應該就沒有再增加的可能，然而比爾蓋茲、巴菲特，其身價都不斷成長，為什麼？有資本在成長，有事業在壯大之故。</p>
+				<footer>
+				  <ul class="buttons">
+					<li><a href="http://magnific.biz/?p=1900" target="_blank" class="button small">點我看更多</a></li>
+				  </ul>
+				</footer>
+			  </section>
+			</div>
+			<div class="4u 12u(narrower)">
+			  <section>
+				<header>
+				  <h3>願「資本力」與你同在！</h3>
+				</header>
+				「看基本面」是什麼？簡單來講，就是看「財務報表」上面的數據。像是每股盈餘（EPS）、本益比、淨值、毛利率等。許久以來，很多人若是關心事業表現，會從這幾個指標來著手了解。不過，看「基本面」卻不一定是一件足夠的事情，尤其是時常關心事業長期表現的長期股東來說，更顯不足......</p>
+				<footer>
+				  <ul class="buttons">
+					<li><a href="http://magnific.biz/?p=5455" target="_blank" class="button small">點我看更多</a></li>
+				  </ul>
+				</footer>
+			  </section>
+			</div>
+		  </div>
+			<footer class="major">
+			  <ul class="buttons">
+				<li><%= link_to "上一節", chapter2_section3_part1_index_path, class: "button" %></li>
+				<li><%= link_to "下一節", chapter2_section3_part3_index_path, class: "button special" %></li>
+			  </ul>
+			</footer>
+		  </section>
+	  <!-- Disqus -->
+		<section class="wrapper style4 container">
+          <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//magnificbiz.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+        </article>
+      </div>
+      <!-- Scripts -->
+        <script id="dsq-count-scr" src="//magnificbiz.disqus.com/count.js" async></script>
+        <script src="https://use.typekit.net/mgd6kfe.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </body>
+</html>
